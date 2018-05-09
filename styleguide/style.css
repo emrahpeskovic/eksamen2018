@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "augusta";
+  src: url("augusta.ttf")
+}
+body {
+  margin: 0;
+  background-color: white;
+}
+header {
+  width: 100%;
+  height: 250px;
+  background-color: black;
+}
+section#content {
+margin: auto;
+width: 1280px;
+height: 900px;
+background-color: white;
+}
+section.section {
+  width: 100%;
+  background-color: white;
+  padding: 40px 0px 40px 0px;
+  border-bottom: 1px solid #333;
+}
+.logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.colors {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.typography {
+  font-family: "augusta";
+}
+footer {
+  width: 100%;
+  height: 120px;
+  background-color: lightgrey;
+}
+.color {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  font-family: verdana;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.color1 {
+  background-color: #344e5b;
+}
+.color2 {
+  background-color: #adbab2;
+}
+.color3 {
+  background-color: #a56640;
+}
