@@ -2,6 +2,10 @@
   font-family: "augusta";
   src: url("augusta.ttf")
 }
+@font-face {
+  font-family: "cambria";
+  src: url("cambria.ttf")
+}
 body {
   margin: 0;
   background-color: white;
@@ -13,15 +17,29 @@ header {
 }
 section#content {
 margin: auto;
-width: 1280px;
-height: 900px;
+max-width: 1280px;
 background-color: white;
 }
 section.section {
   width: 100%;
   background-color: white;
-  padding: 40px 0px 40px 0px;
-  border-bottom: 1px solid #333;
+  border-bottom: 4px solid #e6e6e6;
+  padding: 0px 0px 40px 0px;
+  margin: 40px 0px 0px 0px;
+  background-color: red;
+}
+section.example {
+  display: flex;
+  flex: 8;
+  align-items: center;
+}
+section.description {
+  display: flex;
+  flex: 2;
+  font-family: "cambria";
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
 }
 .logos {
   display: flex;
@@ -32,9 +50,13 @@ section.section {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+
 }
 .typography {
-  font-family: "augusta";
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #000;
 }
 footer {
   width: 100%;
@@ -45,7 +67,7 @@ footer {
   width: 130px;
   height: 130px;
   border-radius: 100%;
-  font-family: verdana;
+  font-family: "cambria";
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -53,11 +75,39 @@ footer {
 
 }
 .color1 {
-  background-color: #344e5b;
+  background-color: #284b55;
 }
 .color2 {
-  background-color: #adbab2;
+  background-color: #a9c5ae;
 }
 .color3 {
-  background-color: #a56640;
+  background-color: #9d522d;
 }
+.title {
+  font-family: "cambria";
+  font-size: 40px;
+  margin: 0px 0px 0px 10px;
+  padding: 10px 0px 10px 0px;
+}
+.title-custom {
+  font-family: "augusta";
+  font-size: 36px;
+}
+.title1 {
+  font-family: "cambria";
+  font-size: 28px;
+}
+.title2 {
+  font-family: "cambria";
+  font-size: 24px;
+}
+.title3  {
+  font-family: "cambria";
+  font-size: 20px;
+}
+.placeholdertxt {
+  font-family: "cambria";
+  font-size: 18px;
+  line-height: 30px;
+}
+.
