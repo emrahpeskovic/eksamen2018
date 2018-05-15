@@ -1,5 +1,6 @@
 body {
-  background-color: #747D79;
+  background-image: url("../images/tile.png");
+  /* background-color: #747D79; */
   margin: 0;
 }
 .section {
@@ -21,6 +22,8 @@ body {
   width: 1200px;
   background-color: #344E5B;
   margin: auto;
+  padding: 50px;
+  box-sizing: border-box;
 }
 .row {
   display: flex;
@@ -37,4 +40,15 @@ body {
 .app_description {
   display: flex;
   flex: 1;
+}
+.day {
+  width: 200px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.active {
+  background-color: green;
+  border-radius: 30px;
 }
