@@ -8,11 +8,12 @@
   <body>
     <nav>
       <ul>
-        <a href="#" class="menu"><li>Program</li></a>
+        <a href="#program" class="menu"><li>Program</li></a>
         <a href="#" class="menu"><li>Oplev</li></a>
         <a href="#" class="menu"><li>Institutioner</li></a>
         <a href="#" class="menu"><li>Bliv frivillig</li></a>
-        <a href="#" class="menu"><li>Kontakt</li></a>
+        <a href="#map" class="menu"><li>Find os</li></a>
+        <a href="#contact" class="menu"><li>Kontakt</li></a>
       </ul>
     </nav>
     <div id="wrapper">
@@ -24,7 +25,7 @@
           F.eks. et temauge-tiltag mellem Varde Kultur og Fritid og omkringliggende børnehaver og/eller skoler, i ugen op til festivalen. Dette tiltag vil ramme børn, som så influerer videre til deres forældre. Dette tiltag vil dog næsten udelukkende være til børnefamilier.
         </p>
     </section>
-    <section class="section2 padding row">
+    <section class="section2 padding row" id="program">
       <div class="day">
         Torsdag
       </div>
@@ -53,8 +54,7 @@
       </p>
         <img src="http://via.placeholder.com/400x400" alt="">
     </section>
-    <section class="section2">
-      <div id="map"></div>
+    <section class="section2" id="map">
     <script>
       function initMap() {
         var varde = {lat: 55.623335, lng: 8.481852};
@@ -72,7 +72,18 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJZX3AkZej5gj-XG0TIa3iVur1_xHvHTg&callback=initMap">
     </script>
     </section>
-    <section class="section1 row">
+    <section class="section1" id="contact">
+      <div class="container">
+ <form action="action_page.php">
+   <label for="fname">First Name</label>
+   <input type="text" id="fname" name="firstname" placeholder="Your name..">
+   <label for="lname">Last Name</label>
+   <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+   <label for="subject">Subject</label>
+   <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+   <input type="submit" value="Submit">
+ </form>
+</div>
     </section>
   </div>
   </body>
