@@ -1,1 +1,47 @@
-lala 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+
+}
+
+#wrapper {
+  width: 100%;
+  height: auto;
+}
+
+header {
+  background-color: lightblue;
+  height: 700px;
+}
+
+.header_picture {
+  margin-top: 60px;
+}
+
+#login_section {
+  background-color: lightgreen;
+  height: 1000px;
+}
+
+.login {
+  width: 550px;
+  height: 300px;
+  background-color: red;
+  margin: auto;
+
+}
+
+.username {
+  width: 550px;
+  height: 40px;
+  margin-bottom: 30px;
+}
+
+.password {
+  width: 550px;
+  height: 40px;
+  margin-bottom: 10px;
+}
