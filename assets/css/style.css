@@ -136,13 +136,14 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #5f6562;
 }
-
+.contactinfo {
+  flex: 1;
+}
 /* Add a background color and some padding around the form */
 .container {
-  display: flex;
-  flex: 1;
   border-radius: 15px;
   padding: 20px;
   margin: auto;
   color: #fff;
+  flex: 1;
 }
