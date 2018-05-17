@@ -130,16 +130,21 @@ input[type=submit] {
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
+  cursor: pointer; /* Musen bliver anderledes når man holder over send-knappen */
 }
 
-/* When moving the mouse over the submit button, add another color */
+/* Når man holder musen over send-knappen skifter den farve */
 input[type=submit]:hover {
   background-color: #5f6562;
 }
 .contactinfo {
   flex: 1;
 }
+
+.send_button {
+  float: right;
+}
+
 /* Add a background color and some padding around the form */
 .container {
   border-radius: 15px;
