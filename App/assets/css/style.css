@@ -44,3 +44,51 @@ header {
   height: 40px;
   margin-bottom: 10px;
 }
+
+#content {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#main-menu {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.menu-link_left {
+  font-family: "augusta";
+  font-size: 24px;
+  text-decoration: none;
+  color: #111;
+  float: left;
+  margin: 0px 0px 0px 10px;
+}
+.menu-link_left:hover {
+  color: blue;
+}
+.menu-link_right {
+  font-family: "augusta";
+  font-size: 24px;
+  text-decoration: none;
+  color: #111;
+  float: right;
+  margin: 0px 10px 0px 0px;
+}
+.menu-link_right:hover {
+  color: blue;
+}
+#title {
+  font-family: "augusta";
+  font-size: 36px;
+  padding: 5px;
+  background-color: rgb(4,76,127, 0.2);
+  color: #f1f1f1;
+  box-sizing: border-box;
+  margin: 5px 0px 0px 0px;
+  text-align: center;
+}
+.gender-image {
+  margin: 60px 0px 0px 0px;
+}
