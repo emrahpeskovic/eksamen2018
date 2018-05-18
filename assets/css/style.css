@@ -110,20 +110,16 @@ li a:hover {
 /* li a:active {
   background-color: #344E5B;
 } */
-
-/* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
-width: 100%; /* Full width */
-padding: 12px; /* Some padding */
-border: 1px solid #ccc; /* Gray border */
-border-radius: 4px; /* Rounded borders */
-box-sizing: border-box; /* Make sure that padding and width stays in place */
-margin-top: 12px; /* Add a top margin */
-margin-bottom: 12px; /* Bottom margin */
-resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+margin-top: 12px;
+margin-bottom: 12px;
+resize: vertical;
 }
-
-/* Style the submit button with a specific background color etc */
 input[type=submit] {
   background-color: #747D79;
   color: white;
@@ -132,15 +128,12 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
 }
-
-/* When moving the mouse over the submit button, add another color */
 input[type=submit]:hover {
   background-color: #5f6562;
 }
 .contactinfo {
   flex: 1;
 }
-/* Add a background color and some padding around the form */
 .container {
   border-radius: 15px;
   padding: 20px;
@@ -150,12 +143,37 @@ input[type=submit]:hover {
   font-family: "cambria";
   font-size: 25px;
 }
-
 .name, .mail, .message {
 font-size: 15px;
 font-family: "cambria";
 }
-
 .submit {
-
+}
+.image-slider-container {
+  display: flex;
+  flex-direction: row;
+  width: 1250px;
+  height: 350px;
+  background-color: red;
+}
+.slide-left {
+  width: 125px;
+  background-color: yellow;
+}
+.image-container {
+  display:run-in;
+  width: 900px;
+  background-color: blue;
+  overflow-y: hidden;
+  flex-direction: row;
+}
+.slide-right {
+  width: 125px;
+  background-color: green;
+}
+.slide-img {
+  width: 550px;
+  height: 300px;
+  background-color: lightgreen;
+  margin: 0px 5px 0px 5px;
 }
