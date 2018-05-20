@@ -1,102 +1,132 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Varde Middelalderfestival 2018</title>
     <link rel="stylesheet" href="assets/css/style.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <nav>
-      <ul>
-        <a href="#program" class="menu"><li>Program</li></a>
-        <a href="#" class="menu"><li>Oplev</li></a>
-        <a href="#" class="menu"><li>Institutioner</li></a>
-        <a href="#" class="menu"><li>Bliv frivillig</li></a>
-        <a href="#map" class="menu"><li>Find os</li></a>
-        <a href="#contact" class="menu"><li>Kontakt</li></a>
-      </ul>
+        <ul>
+            <a href="#program" class="menu">
+                <li>Program</li>
+            </a>
+            <a href="#" class="menu">
+                <li>Oplev</li>
+            </a>
+            <a href="#" class="menu">
+                <li>Institutioner</li>
+            </a>
+            <a href="#" class="menu">
+                <li>Bliv frivillig</li>
+            </a>
+            <a href="#map" class="menu">
+                <li>Find os</li>
+            </a>
+            <a href="#contact" class="menu">
+                <li>Kontakt</li>
+            </a>
+        </ul>
     </nav>
     <div id="wrapper">
-    <section class="section">
-    </section>
-    <section class="section1 padding row">
-        <img src="http://via.placeholder.com/400x400" alt="">
-        <p class="description">
-          F.eks. et temauge-tiltag mellem Varde Kultur og Fritid og omkringliggende børnehaver og/eller skoler, i ugen op til festivalen. Dette tiltag vil ramme børn, som så influerer videre til deres forældre. Dette tiltag vil dog næsten udelukkende være til børnefamilier.
-        </p>
-    </section>
-    <section class="section2 padding row" id="program">
-      <div class="day">
-        Torsdag
-      </div>
-      <div class="day active">
-        Fredag
-      </div>
-      <div class="day">
-        Lørdag
-      </div>
-      <div class="day">
-        Søndag
-      </div>
-    </section>
-    <section class="section1 row">
-      <div class="image-slider-container">
-        <div class="slide-left">
-        </div>
-          <div class="image-container">
-            <div class="slide-img">
+        <section class="section">
+            <div id="countdown">
+                <p></p>
             </div>
-            <div class="slide-img">
+        </section>
+        <section class="section1 padding row">
+            <img src="http://via.placeholder.com/400x400" alt="">
+            <p class="description">
+                F.eks. et temauge-tiltag mellem Varde Kultur og Fritid og omkringliggende børnehaver og/eller skoler, i ugen op til festivalen. Dette tiltag vil ramme børn, som så influerer videre til deres forældre. Dette tiltag vil dog næsten udelukkende være til børnefamilier.
+            </p>
+        </section>
+        <section class="section2 padding row" id="program">
+            <div class="day">
+                Torsdag
             </div>
-          </div>
-          <div class="slide-right">
-          </div>
-        </div>
-    </section>
-    <section class="section2 padding row">
-        <img src="http://via.placeholder.com/400x400" alt="">
-        <p class="description">
-          F.eks. et temauge-tiltag mellem Varde Kultur og Fritid og omkringliggende børnehaver og/eller skoler, i ugen op til festivalen. Dette tiltag vil ramme børn, som så influerer videre til deres forældre. Dette tiltag vil dog næsten udelukkende være til børnefamilier.
-        </p>
-    </section>
-    <section class="section1 row">
-      <p class="description">
-        F.eks. et temauge-tiltag mellem Varde Kultur og Fritid og omkringliggende børnehaver og/eller skoler, i ugen op til festivalen. Dette tiltag vil ramme børn, som så influerer videre til deres forældre. Dette tiltag vil dog næsten udelukkende være til børnefamilier.
-      </p>
-        <img src="http://via.placeholder.com/400x400" alt="">
-    </section>
-    <section class="section2" id="map">
-    <script>
-      function initMap() {
-        var varde = {lat: 55.623335, lng: 8.481852};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 15,
-          center: varde
-        });
-        var marker = new google.maps.Marker({
-          position: varde,
-          map: map
-        });
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJZX3AkZej5gj-XG0TIa3iVur1_xHvHTg&callback=initMap">
-    </script>
-    </section>
-    <section class="section1 row" id="contact">
-      <p class="contactinfo">
-        Lorem ipsum dolor sit amet, ei mel posse essent delectus. Tincidunt disputando has ea, quis primis delicata vim at, eam ne brute inani causae. Feugiat fierent abhorreant ex his, ei eum aliquid sapientem. Est tota simul choro eu.
-      </p>
-      <div class="container">
-       <label for="fname">Skriv besked</label>
-       <input type="text" class="name" placeholder="Navn">
-       <!-- <label for="lname">Last Name</label> -->
-       <input type="text" class="mail" placeholder="Mail">
-       <!-- <label for="subject">Besked</label> -->
-       <textarea class="message" placeholder="Besked" style="height:200px"></textarea>
-       <input type="submit" class="send_button" value="Send">
-     </div>
-    </section>
-  </div>
-  </body>
+            <div class="panel">
+              <ul>
+                <li>Indhold 1</li>
+                <li>TEST</li>
+              </ul>
+            </div>
+            <div class="day active">
+                Fredag
+            </div>
+            <div class="panel show">
+              <ul>
+                <li>Indhold 2</li>
+                <li>TEST</li>
+              </ul>
+            </div>
+            <div class="day">
+                Lørdag
+            </div>
+            <div class="panel">
+              <ul>
+                <li>Indhold 3</li>
+                <li>TEST</li>
+              </ul>
+            </div>
+            <div class="day">
+                Søndag
+            </div>
+            <div class="panel">
+              <ul>
+                <li>Indhold 4</li>
+                <li>TEST</li>
+              </ul>
+            </div>
+        </section>
+        <section class="section1 row">
+            <div class="image-slider-container">
+                <div class="slide-left">
+                </div>
+                <div class="image-container">
+                    <div class="slide-img">
+                    </div>
+                    <div class="slide-img">
+                    </div>
+                </div>
+                <div class="slide-right">
+                </div>
+            </div>
+        </section>
+        <section class="section2 padding row">
+            <img src="http://via.placeholder.com/400x400" alt="">
+            <p class="description">
+                F.eks. et temauge-tiltag mellem Varde Kultur og Fritid og omkringliggende børnehaver og/eller skoler, i ugen op til festivalen. Dette tiltag vil ramme børn, som så influerer videre til deres forældre. Dette tiltag vil dog næsten udelukkende være til børnefamilier.
+            </p>
+        </section>
+        <section class="section1 row">
+            <p class="description">
+                F.eks. et temauge-tiltag mellem Varde Kultur og Fritid og omkringliggende børnehaver og/eller skoler, i ugen op til festivalen. Dette tiltag vil ramme børn, som så influerer videre til deres forældre. Dette tiltag vil dog næsten udelukkende være til børnefamilier.
+            </p>
+            <img src="http://via.placeholder.com/400x400" alt="">
+        </section>
+        <section class="section2" id="map">
+        </section>
+        <section class="section1 row" id="contact">
+            <p class="contactinfo">
+                Lorem ipsum dolor sit amet, ei mel posse essent delectus. Tincidunt disputando has ea, quis primis delicata vim at, eam ne brute inani causae. Feugiat fierent abhorreant ex his, ei eum aliquid sapientem. Est tota simul choro eu.
+            </p>
+            <div class="container">
+                <label for="fname">Skriv besked</label>
+                <input type="text" class="name" placeholder="Navn">
+                <!-- <label for="lname">Last Name</label> -->
+                <input type="text" class="mail" placeholder="Mail">
+                <!-- <label for="subject">Besked</label> -->
+                <textarea class="message" placeholder="Besked" style="height:200px"></textarea>
+                <input type="submit" class="send_button" value="Send">
+            </div>
+        </section>
+    </div>
+                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJZX3AkZej5gj-XG0TIa3iVur1_xHvHTg&callback=initMap"></script>
+                <script src="/assets/js/script.js">
+
+                </script>
+</body>
+
 </html>

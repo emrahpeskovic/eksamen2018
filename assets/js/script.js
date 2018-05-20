@@ -14,7 +14,7 @@ function initMap() {
 }
 
 /* Program Javascript */
- 
+
 // Smider alle med classen "day" ind i en variabel
 var acc = document.getElementsByClassName("day");
 // Smider alle med classen "panel" ind i en variabel
@@ -45,3 +45,25 @@ function setClass(els, className, fnName) {
         els[i].classList[fnName](className);
     }
 }
+
+/* Javascript til datoen */
+
+// Opretter en variabel hvor jeg gemmer dato for festivalen
+var countDownDate = new Date("August 6, 2018").getTime();
+// Denne variabel kører funktionen hvert sekund for at tjekke om der er sket ændringer
+var x = setInterval(function() {
+  // Skaffer den nuværende dato
+    var now = new Date().getTime();
+    // Tjekker hvor stor forskel der er på festivals dato og den nuværende dato
+    var distance = countDownDate - now;
+    // Udregner hvor mange dage der er til festivalen
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    // Udregner hvor mange timer der er til eventet
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    // Udregner hvor mange minutter der er til eventet
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    // Smider de forskellige variabler ind i en div med id countdown og smider et <p> tag rundt om
+    document.getElementById("countdown").innerHTML = "<p>" + days + " dage " + hours + " timer " +
+        minutes + " minutter </p>";
+}, 1000);
+ 
