@@ -1,3 +1,9 @@
 http://www.menucool.com/slider/javascript-image-slider-demo4
 https://www.creativejuiz.fr/trytotry/juizy-slideshow-full-css3-html5/#sl_i1
 https://codepen.io/mephysto/pen/ZYVKRY
+
+
+https://www.sanwebe.com/snippet/using-html5-local-storage-to-store-input-data-and-retrieving
+https://gomakethings.com/saving-html-to-localstorage-with-vanilla-js/
+https://stackoverflow.com/questions/10333230/save-input-data-to-localstorage-on-button-click
+https://stackoverflow.com/questions/15391883/using-html5-localstorage-on-a-contact-form-incorrect-values-in-form-elements
