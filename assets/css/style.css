@@ -232,6 +232,7 @@ input[type=submit]:hover {
 #oplev {
   font-family: "augusta";
   font-size: 70px;
+  color: white; 
   margin: 0px 0px 20px 0px;
   padding: 0px;
 }
