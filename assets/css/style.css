@@ -287,3 +287,8 @@ input[type=submit]:hover {
   float: right;
   display: block;
 }
+
+#app_ikon {
+  width: 350px;
+
+}
