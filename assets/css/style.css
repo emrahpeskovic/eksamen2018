@@ -229,18 +229,17 @@ input[type=submit]:hover {
      margin: 10px 40px;
   }
 
-#oplev {
+.overskrifter {
   font-family: "augusta";
-  font-size: 70px;
+  font-size: 60px;
   color: white;
   margin: 0px 0px 20px 0px;
   padding: 0px;
+  width: 100%;
+  text-align: center;
 }
-.KNAP {
-  width: 200px;
-  height: 150px;
-  background-color: red;
-}
+
+
 .slide-img {
   width: 260px;
 }
