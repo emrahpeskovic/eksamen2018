@@ -141,7 +141,7 @@ nav ul {
     box-shadow: 2px 2px 6px #444;
     font-family: "augusta";
     color: #fff;
-    font-size: 36px;
+    font-size: 30px;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -232,7 +232,7 @@ input[type=submit]:hover {
 #oplev {
   font-family: "augusta";
   font-size: 70px;
-  color: white; 
+  color: white;
   margin: 0px 0px 20px 0px;
   padding: 0px;
 }
