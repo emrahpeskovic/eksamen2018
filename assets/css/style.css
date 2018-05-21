@@ -228,8 +228,20 @@ input[type=submit]:hover {
   #body {
      margin: 10px 40px;
   }
+
+#oplev {
+  font-family: "augusta";
+  font-size: 70px;
+  margin: 0px 0px 20px 0px;
+  padding: 0px;
+}
+.KNAP {
+  width: 200px;
+  height: 150px;
+  background-color: red;
+}
 .slide-img {
-  width: 260px; 
+  width: 260px;
 }
 
   .home-product-new-hldr {
