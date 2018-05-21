@@ -12,7 +12,7 @@ function initMap() {
     map: map
   });
 }
-
+ 
 /* Program Javascript */
 
 // Smider alle med classen "day" ind i en variabel

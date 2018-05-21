@@ -228,6 +228,9 @@ input[type=submit]:hover {
   #body {
      margin: 10px 40px;
   }
+.slide-img {
+  width: 260px; 
+}
 
   .home-product-new-hldr {
      position: relative;
