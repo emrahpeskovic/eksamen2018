@@ -229,7 +229,7 @@ input[type=submit]:hover {
      margin: 10px 40px;
   }
 
-.overskrifter {
+#overskrift_oplev, #overskrift_program, #overskrift_forinstitutioner, #overskrift_blivfrivillig, #overskrift_kontakt {
   font-family: "augusta";
   font-size: 60px;
   color: white;

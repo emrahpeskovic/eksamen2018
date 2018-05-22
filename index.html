@@ -12,22 +12,22 @@
 <body>
   <nav>
     <ul>
-      <a href="#program" class="menu">
+      <a class="menu" onclick="programVM()">
         <li>Program</li>
       </a>
-      <a class="menu" onclick="VM()">
+      <a class="menu" onclick="oplevVM()">
         <li>Oplev</li>
       </a>
-      <a href="#" class="menu">
+      <a class="menu" onclick="forinstitutionerVM">
         <li>For institutioner</li>
       </a>
-      <a href="#" class="menu">
+      <a class="menu" onclick="blivfrivilligVM">
         <li>Bliv frivillig</li>
       </a>
-      <a href="#map" class="menu">
+      <a class="menu" onclick="findosVM">
         <li>Find os</li>
       </a>
-      <a href="#contact" class="menu">
+      <a class="menu" onclick="kontaktVM">
         <li>Kontakt</li>
       </a>
     </ul>
@@ -45,7 +45,7 @@
       </p>
     </section>
     <section class="section2 padding row" id="program">
-      <h1 class="overskrifter">Program</h1>
+      <h1 id="overskrift_program">Program</h1>
         <div class="day">
           Torsdag
         </div>
@@ -86,7 +86,7 @@
 
     </section>
     <section class="section1 row">
-      <h1 class="overskrifter">Oplev</h1>
+      <h1 id="overskrift_oplev">Oplev</h1>
       <div class="home-product-new-hldr">
         <div class="slider-btn-hldr slider-btn-hldr-left">
           <button id="left-btn" class="slider-btn" style="display: none;">
@@ -143,7 +143,7 @@
       </div>
     </section>
     <section class="section2 padding row">
-      <h1 class="overskrifter">For institutioner</h1>
+      <h1 id="overskrift_forinstitutioner">For institutioner</h1>
       <img src="http://via.placeholder.com/400x400" alt="">
       <p class="description">
         F.eks. et temauge-tiltag mellem Varde Kultur og Fritid og omkringliggende børnehaver og/eller skoler, i ugen op til festivalen. Dette tiltag vil ramme børn, som så influerer videre til deres forældre. Dette tiltag vil dog næsten udelukkende være til børnefamilier.
@@ -151,7 +151,7 @@
     </section>
     <section class="section1 row">
 
-      <h1 class="overskrifter">Bliv frivillig</h1>
+      <h1 id="overskrift_blivfrivillig">Bliv frivillig</h1>
       <p class="description">
         F.eks. et temauge-tiltag mellem Varde Kultur og Fritid og omkringliggende børnehaver og/eller skoler, i ugen op til festivalen. Dette tiltag vil ramme børn, som så influerer videre til deres forældre. Dette tiltag vil dog næsten udelukkende være til børnefamilier.
       </p>
@@ -160,6 +160,7 @@
     <section class="section2" id="map">
     </section>
     <section class="section1 row" id="contact">
+      <h1 id="overskrift_kontakt">Kontakt</h1>
       <p class="contactinfo">
         Lorem ipsum dolor sit amet, ei mel posse essent delectus. Tincidunt disputando has ea, quis primis delicata vim at, eam ne brute inani causae. Feugiat fierent abhorreant ex his, ei eum aliquid sapientem. Est tota simul choro eu.
       </p>
