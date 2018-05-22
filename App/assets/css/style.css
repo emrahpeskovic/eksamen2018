@@ -8,6 +8,17 @@
 }
 body {
 }
+#wrapper_login {
+  width: 375px;
+  height: 667px;
+  /* width: 375px;
+  height: 667px; */
+  background-image: url("../images/bg_login.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
 #wrapper {
   width: 375px;
   height: 667px;
