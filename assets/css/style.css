@@ -342,6 +342,32 @@ input[type=submit]:hover {
 
 }
 
+.contactinfo {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+
+
+#socialmedia {
+  height: 40px;
+  color: white;
+}
+
+#socialmedia a {
+  color: white;
+  text-decoration: none;
+}
+
+.fa, .fa-linkedin, .fa, .fa-facebook, .fa, .fa-twitter {
+  margin: 13px 0px 0px 15px;
+  color: white;
+
+
+
+
 footer {
   width: 100%;
   height: 30px;
