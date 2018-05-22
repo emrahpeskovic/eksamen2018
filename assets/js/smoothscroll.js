@@ -14,6 +14,10 @@ function frivilligSS () {
         var element = document.getElementById("section-frivillig");
         element.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
 }
+function billedgalleriSS () {
+        var element = document.getElementById("section-billedgalleri");
+        element.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+}
 function findosSS () {
         var element = document.getElementById("map");
         element.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
