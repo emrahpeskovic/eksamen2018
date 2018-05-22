@@ -87,7 +87,7 @@
 
 
     </section>
-    <section class="section1 row" id="section-oplev">
+    <section class="section1 padding row" id="section-oplev">
       <h1 class="title">Oplev</h1>
       <div class="home-product-new-hldr">
         <div class="slider-btn-hldr slider-btn-hldr-left">
@@ -146,17 +146,17 @@
     </section>
     <section class="section2 padding row" id="section-institutioner">
       <h1 class="title">For institutioner</h1>
-      <img src="http://via.placeholder.com/400x400" alt="">
+      <img src="assets/images/forinstuitioner.jpg" class="images_flex" alt="">
       <p class="description">
         F.eks. et temauge-tiltag mellem Varde Kultur og Fritid og omkringliggende børnehaver og/eller skoler, i ugen op til festivalen. Dette tiltag vil ramme børn, som så influerer videre til deres forældre. Dette tiltag vil dog næsten udelukkende være til børnefamilier.
       </p>
     </section>
-    <section class="section1 row" id="section-frivillig">
+    <section class="section1 padding row" id="section-frivillig">
       <h1 class="title">Bliv frivillig</h1>
       <p class="description">
         F.eks. et temauge-tiltag mellem Varde Kultur og Fritid og omkringliggende børnehaver og/eller skoler, i ugen op til festivalen. Dette tiltag vil ramme børn, som så influerer videre til deres forældre. Dette tiltag vil dog næsten udelukkende være til børnefamilier.
       </p>
-      <img src="http://via.placeholder.com/400x400" alt="">
+      <img src="assets/images/forinstuitioner.jpg" class="images_flex" alt="">
     </section>
     <section class="section2 padding row" id="section-billedgalleri">
       <h1 class="title">Billedgalleri</h1>
@@ -223,11 +223,14 @@
         Lorem ipsum dolor sit amet, ei mel posse essent delectus. Tincidunt disputando has ea, quis primis delicata vim at, eam ne brute inani causae. Feugiat fierent abhorreant ex his, ei eum aliquid sapientem. Est tota simul choro eu.
       </p>
       <div class="container">
-        <label for="fname">Skriv besked</label>
-        <input type="text" class="name" placeholder="Navn">
-        <input type="text" class="mail" placeholder="Mail">
-        <textarea class="message" placeholder="Besked" style="height:200px"></textarea>
-        <input type="submit" class="send_button" value="Send">
+        <script src="assets/js/contact.js"></script>
+        <form action="indbakke.html" onsubmit="saveData()">
+          <label for="fname">Skriv besked</label>
+          <input type="text" class="name" id="name" placeholder="Navn">
+          <input type="text" class="mail" id="email" placeholder="Mail">
+          <textarea id="besked" class="message" placeholder="Besked" style="height:200px"></textarea>
+          <input type="submit" class="send_button" value="Send" onclick="">
+        </form>
       </div>
     </section>
     <footer>

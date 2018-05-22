@@ -86,7 +86,7 @@ body {
   width: 100%;
   text-align: center;
 }
-#overskrift_oplev, #overskrift_program, #overskrift_forinstitutioner, #overskrift_blivfrivillig, #overskrift_kontakt {
+#overskrift_oplev, #overskrift_program, #overskrift_forinstitutioner, #overskrift_blivfrivillig, #overskrift_kontakt, #welcome {
   font-family: "augusta";
   font-size: 60px;
   color: white;
@@ -111,6 +111,12 @@ body {
     z-index: 1;
 }
 
+.images_flex {
+  flex: 1;
+  width: 390px;
+  margin-right: 10px;
+}
+
 .padding {
     padding: 50px;
     box-sizing: border-box;
@@ -125,11 +131,13 @@ body {
 }
 
 .description {
-    width: 550px;
+    flex: 1;
+    margin-left: 10px;
     font-family: "cambria";
     font-size: 18px;
     color: white;
     line-height: 30px;
+    padding: 0px 30px 0px 30px;
 }
 
 .day {
@@ -152,10 +160,10 @@ body {
 }
 
 nav {
-    width: 15%;
+    width: 14%;
     position: fixed;
     left: 0;
-    top: 60px;
+    top: 30px;
     z-index: 2;
 }
 
@@ -167,14 +175,14 @@ nav ul {
 
 .menu {
     width: 100%;
-    height: 70px;
+    height: 50px;
     background-color: #9d6946;
     margin-bottom: 20px;
     border-radius: 0px 25px 25px 0px;
     box-shadow: 2px 2px 6px #444;
     font-family: "augusta";
     color: #fff;
-    font-size: 30px;
+    font-size: 28px;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -183,10 +191,9 @@ nav ul {
     cursor: pointer;
 }
 
-.menu:hover,
-.menu:active,
-.menu:focus {
+.menu:hover, .menu:active, .menu:focus {
     background-color: #344E5B;
+
 }
 
 li a:link {
@@ -322,7 +329,7 @@ input[type=submit]:hover {
   }
 
 .scrolltotop {
-  width: 20px; 
+  width: 20px;
   float: right;
   display: block;
   margin-right: 10px;
@@ -340,4 +347,9 @@ footer {
   background-color: #9d6946;
   margin: auto;
   box-sizing: border-box;
+}
+#dinbesked, #emailbesked {
+  color: white;
+  font-family: "cambria";
+  font-size: 20px;
 }
