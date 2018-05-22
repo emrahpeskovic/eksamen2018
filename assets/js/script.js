@@ -49,7 +49,7 @@ function setClass(els, className, fnName) {
 /* Javascript til datoen */
 
 // Opretter en variabel hvor jeg gemmer dato for festivalen
-var countDownDate = new Date("August 6, 2018").getTime();
+var countDownDate = new Date("August 31, 2019").getTime();
 // Denne variabel kører funktionen hvert sekund for at tjekke om der er sket ændringer
 var x = setInterval(function() {
   // Skaffer den nuværende dato
