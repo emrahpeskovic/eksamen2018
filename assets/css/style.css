@@ -61,7 +61,24 @@ body {
   visibility: visible;
   opacity: 1;
 }
-
+.title {
+  font-family: "augusta";
+  font-size: 60px;
+  color: white;
+  margin: 0px 0px 20px 0px;
+  padding: 0px;
+  width: 100%;
+  text-align: center;
+}
+#overskrift_oplev, #overskrift_program, #overskrift_forinstitutioner, #overskrift_blivfrivillig, #overskrift_kontakt {
+  font-family: "augusta";
+  font-size: 60px;
+  color: white;
+  margin: 0px 0px 20px 0px;
+  padding: 0px;
+  width: 100%;
+  text-align: center;
+}
 .section1 {
     width: 100%;
     background-color: #9d6946;
@@ -147,6 +164,7 @@ nav ul {
     text-decoration: none;
     padding: 0px 0px 0px 10px;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .menu:hover,
@@ -228,17 +246,6 @@ input[type=submit]:hover {
   #body {
      margin: 10px 40px;
   }
-
-#overskrift_oplev, #overskrift_program, #overskrift_forinstitutioner, #overskrift_blivfrivillig, #overskrift_kontakt {
-  font-family: "augusta";
-  font-size: 60px;
-  color: white;
-  margin: 0px 0px 20px 0px;
-  padding: 0px;
-  width: 100%;
-  text-align: center;
-}
-
 
 .slide-img {
   width: 260px;
