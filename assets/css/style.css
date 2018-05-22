@@ -45,11 +45,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.tid-lokation {
-  position: inherit;
-  width: 100%;
-  display: flex;
-}
 .section #countdown {
   position: absolute;
   bottom: 20px;
@@ -383,7 +378,7 @@ color: #344E5B;
   flex-wrap: wrap;
 }
 .contact-row {
-  
+
 }
 .contact-cat {
   flex: 1;
