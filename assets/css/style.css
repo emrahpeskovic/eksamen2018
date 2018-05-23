@@ -5,7 +5,7 @@
 @font-face {
   font-family: "cambria";
   src: url("../fonts/cambria.ttf")
-} 
+}
 body {
   background-color: #747D79;
   margin: 0;
@@ -236,6 +236,30 @@ body {
     padding: 5px;
     border-radius: 30px;
     background: #344e5b;
+}
+
+#section-frivillig {
+    padding: 50px 150px;
+}
+
+#section-frivillig img {
+    max-height: 300px;
+    margin-top: 25px;
+}
+
+#section-frivillig h2 {
+    font-size: 30px;
+    color: #344E5B;
+    margin-bottom: 10px;
+    line-height: 1.0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#section-frivillig p {
+    font-size: 18px;
+    line-height: 1.4;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
 }
 
 
