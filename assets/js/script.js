@@ -78,9 +78,11 @@ var x = setInterval(function() {
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   // Udregner hvor mange minutter der er til eventet
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  // Udregner hvor mange sekunder der er til eventet
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   // Smider de forskellige variabler ind i en div med id countdown og smider et <p> tag rundt om
   document.getElementById("countdown").innerHTML = "<p>" + days + " dage " + hours + " timer " +
-    minutes + " minutter </p>";
+    minutes + " minutter " + seconds + "sekunder </p>";
 }, 1000);
 var listEl = document.querySelector('.carousel');
  var btnLeftEl = document.querySelector('#left-btn');
