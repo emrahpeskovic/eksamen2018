@@ -1,3 +1,7 @@
+function emailSent() {
+  window.alert("Din e-mail er nu sendt.")
+}
+
 function saveData() {
   var name = document.getElementById('name').value;
   var email = document.getElementById('email').value;
