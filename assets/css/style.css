@@ -1,38 +1,23 @@
 @font-face {
-    font-family: "augusta";
-    src: url("../fonts/augusta.ttf")
-}
-
-@font-face {
-    font-family: "cambria";
-    src: url("../fonts/cambria.ttf")
-}
-
-body {
-    /* background-image: url("../images/tile.png"); */
-    background-color: #747D79;
-    margin: 0;
-}
-
-#wrapper {
-    width: 75%;
-    margin: auto;
-}
-
-/* #header_text {
-  color: white;
   font-family: "augusta";
-  font-size: 90px;
-  margin: 0px 0px 0px 50px;
-} */
-
-
-
+  src: url("../fonts/augusta.ttf")
+}
+@font-face {
+  font-family: "cambria";
+  src: url("../fonts/cambria.ttf")
+}
+body {
+  background-color: #747D79;
+  margin: 0;
+}
+#wrapper {
+  width: 75%;
+  margin: auto;
+}
 #ridder {
   margin: 0px 0px 0px 450px;
   background-color: red;
 }
-
 .section {
   width: 100%;
   min-height: 400px;
@@ -45,13 +30,11 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 .section #countdown {
   position: absolute;
   bottom: 20px;
   left: 120px;
 }
-
 .section #countdown p {
     font-family: "augusta";
     font-size: 30px;
@@ -60,51 +43,54 @@ body {
 }
 #section-program {
   position: relative;
-  height: 300px;
-  align-items: initial;
+  display: flex;
+  flex-direction: row;
+  height: 500px;
 }
 #section-program .panel {
   position: absolute;
-  top: 227px;
-  left: 160px;
+  bottom: 0;
+  left: 50 50;
   visibility: hidden;
   opacity: 0;
-  background-color: red;
-}
-#section-program ul {
-  margin: 0;
-  padding: 0;
-}
-#section-program ul li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  background-color: #9D6946;
+  width: 920px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 #section-program .panel.show {
   visibility: visible;
   opacity: 1;
 }
+.program-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 .day {
   font-family: "augusta";
   font-size: 24px;
   color: white;
-  width: 200px;
+  min-width: 200px;
   height: 60px;
+  margin: 0px 20px 20px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#container-program {
-  width: 100%;
-  height: 600px;
-  background-color: red;
+.active {
+  background-color: #9D6946;
+  border-radius: 30px 30px 0px 0px;
+  pointer-events: none;
 }
 #login-container {
   width: 400px;
   height: 300px;
   background-color: grey;
 }
-
 .title {
   font-family: "augusta";
   font-size: 60px;
@@ -114,7 +100,7 @@ body {
   width: 100%;
   text-align: center;
 }
-#overskrift_oplev, #overskrift_program, #overskrift_forinstitutioner, #overskrift_blivfrivillig, #overskrift_kontakt, #welcome {
+##welcome {
   font-family: "augusta";
   font-size: 60px;
   color: white;
@@ -130,7 +116,6 @@ body {
     padding: 10px;
     box-sizing: border-box;
 }
-
 .section2 {
     width: 100%;
     background-color: #344E5B;
@@ -138,42 +123,34 @@ body {
     position: relative;
     z-index: 1;
 }
-
-.images_flex {
+.flex-img {
   flex: 1;
-  width: 390px;
-  margin-right: 10px;
 }
-
 .padding {
     padding: 50px;
     box-sizing: border-box;
 }
-
 .row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
 }
-
 .description {
-    flex: 1;
-    margin-left: 10px;
-    font-family: "cambria";
-    font-size: 18px;
-    color: white;
-    line-height: 30px;
-    padding: 0px 30px 0px 30px;
+  flex: 1;
+  font-family: "cambria";
+  font-size: 18px;
+  color: white;
+  line-height: 30px;
 }
-
-.active {
-    background-color: #747D79;
-    border-radius: 30px;
-    pointer-events: none;
+.text-padding_left {
+  padding-left: 20px;
 }
+.text-padding_right {
+  padding-right: 20px;
 
+}
 #map {
     width: 100%;
     height: 600px;
@@ -248,40 +225,32 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    /* Musen bliver anderledes når man holder over send-knappen */
 }
-
-/* Når man holder musen over send-knappen skifter den farve */
 
 input[type=submit]:hover {
     background-color: #5f6562;
 }
-
-.contactinfo {
-    flex: 1;
-}
-
 .send_button {
     float: right;
 }
 
-/* Add a background color and some padding around the form */
-
 .container {
     border-radius: 15px;
-    padding: 20px;
+    padding: 0px 20px 0px 20px;
     margin: auto;
     color: #fff;
     flex: 1;
     font-family: "cambria";
     font-size: 25px;
+    height: 470px;
 }
 
-.name,
-.mail,
-.message {
+.name, .mail {
     font-size: 15px;
     font-family: "cambria";
+}
+.message {
+  height: 220px;
 }
 
 .submit {}
@@ -294,113 +263,119 @@ input[type=submit]:hover {
   width: 260px;
 }
 
-  .home-product-new-hldr {
-     position: relative;
-     width:1140px;
-  }
-
-  .home-product-new {
-     width:1140px;
-     overflow:hidden;
-  }
-
-  .carousel{
-     transition:-ms-transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s,
+.carousel-container {
+  position: relative;
+  width:100%;
+}
+.carousel-cont {
+  width:100%;
+  overflow:hidden;
+}
+.carousel{
+  transition:-ms-transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s,
   transform 0.5s ease 0s;
-     position:relative;
-     white-space:nowrap;
-  }
-
-  .item-container {
-       display: inline-block;
-       margin: 4px;
-       vertical-align: top;
-          width:274px;
-  }
-
-  .slider-btn-hldr-left {
-          left: -32px;
-  }
-
-  .slider-btn-hldr-right {
-          right: -32px;
-  }
-
-  .slider-btn-hldr {
-       bottom: 0;
-       display: block;
-       padding: 0;
-          width: 24px;
-       position: absolute;
-       top: 40%;
-       z-index: 1;
-  }
-
-  .slider-btn {
-          background-color: transparent;
-       border: 0 none;
-       color: buttontext;
-       cursor: pointer;
-       display: block;
-  }
-
-  #left-btn {
-              display: none;
-  }
-
-.scrolltotop {
-  width: 20px;
-  float: right;
-  display: block;
-  margin-right: 10px;
+  position:relative;
+  white-space:nowrap;
+}
+.item-container {
+  display: inline-block;
+  margin: 4px;
+  vertical-align: top;
+  width:274px;
 }
 
+.slider-btn-hldr-left {
+  left: -32px;
+  }
+.slider-btn-hldr-right {
+  right: -32px;
+}
+.slider-btn-hldr {
+  bottom: 0;
+  display: block;
+  padding: 0;
+  width: 24px;
+  position: absolute;
+  top: 40%;
+  z-index: 1;
+}
+.slider-btn {
+  background-color: transparent;
+  border: 0 none;
+  color: buttontext;
+  cursor: pointer;
+  display: block;
+}
+#left-btn {
+  display: none;
+}
 #app_ikon {
   width: 350px;
-
-}
-
-.contactinfo {
-  color: white;
-  font-size: 20px;
-  text-align: center;
-  margin-top: 0px;
-}
-
-
-
-#socialmedia {
-  height: 40px;
-  color: white;
-}
-
-#socialmedia a {
-  color: white;
-  text-decoration: none;
-}
-
-.fa, .fa-linkedin, .fa, .fa-facebook, .fa, .fa-twitter {
-  margin: 13px 0px 0px 15px;
-  color: white;
-
-
-
-
-footer {
-  width: 100%;
-  height: 30px;
-  background-color: #9d6946;
-  margin: auto;
-  box-sizing: border-box;
 }
 #dinbesked, #emailbesked {
   color: white;
   font-family: "cambria";
   font-size: 20px;
 }
+.container-contactinfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.contact-sect {
+  height: 130px;
+  border-bottom: 2px solid #344e5b;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px 20px 0px 70px;
+  padding: 10px;
+}
+.contact-sect:last-child {
+  border-bottom: none;
+}
+.contact-cat {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "augusta";
+  font-size: 24px;
+  color: white;
+}
 .contactinfo {
-text-align:center;
-font-size: 25px;
-font-family: "cambria";
-color: #344E5B;
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  font-family: "augusta";
+  font-size: 24px;
+  color: white;
+}
+footer {
+  width: 100%;
+  height: 40px;
+  background-color: #9d6946;
+  margin: auto;
+  box-sizing: border-box;
+}
+#socialmedia {
+  margin: auto;
+  color: white;
+}
+#socialmedia a {
+  color: white;
+  text-decoration: none;
+}
+.fa, .fa-linkedin, .fa, .fa-facebook, .fa, .fa-twitter {
+  margin: 0px 50px 0px 50px;
+  color: white;
+}
+.scrolltotop {
+  width: 20px;
+  float: right;
+  display: block;
+  margin: 10px 10px 0px 0px;
 }

@@ -92,13 +92,13 @@
     </section>
     <section class="section1 padding row" id="section-oplev">
       <h1 class="title">Oplev</h1>
-      <div class="home-product-new-hldr">
+      <div class="carousel-container">
         <div class="slider-btn-hldr slider-btn-hldr-left">
           <button id="left-btn" class="slider-btn" style="display: none;">
                <
            </button>
         </div>
-        <div class="home-product-new">
+        <div class="carousel-cont">
           <div class="carousel" style="left: 0px;">
             <div class="item-container">
               <div class="item">
@@ -149,27 +149,27 @@
     </section>
     <section class="section2 padding row" id="section-institutioner">
       <h1 class="title">For institutioner</h1>
-      <img src="assets/images/forinstuitioner.jpg" class="images_flex" alt="">
+      <img src="assets/images/for-institutioner.jpg" class="flex-img" alt="">
       <p class="description">
         F.eks. et temauge-tiltag mellem Varde Kultur og Fritid og omkringliggende børnehaver og/eller skoler, i ugen op til festivalen. Dette tiltag vil ramme børn, som så influerer videre til deres forældre. Dette tiltag vil dog næsten udelukkende være til børnefamilier.
       </p>
     </section>
     <section class="section1 padding row" id="section-frivillig">
       <h1 class="title">Bliv frivillig</h1>
-      <p class="description">
+      <p class="description text-padding_right">
         F.eks. et temauge-tiltag mellem Varde Kultur og Fritid og omkringliggende børnehaver og/eller skoler, i ugen op til festivalen. Dette tiltag vil ramme børn, som så influerer videre til deres forældre. Dette tiltag vil dog næsten udelukkende være til børnefamilier.
       </p>
-      <img src="assets/images/frivillig.jpg" class="images_flex" alt="">
+      <img src="assets/images/frivillig.jpg" class="flex-img" alt="">
     </section>
     <section class="section2 padding row" id="section-billedgalleri">
       <h1 class="title">Billedgalleri</h1>
-      <div class="home-product-new-hldr">
+      <div class="carousel-container">
         <div class="slider-btn-hldr slider-btn-hldr-left">
           <button id="left-btn" class="slider-btn" style="display: none;">
                <
            </button>
         </div>
-        <div class="home-product-new">
+        <div class="carousel-cont">
           <div class="carousel" style="left: 0px;">
             <div class="item-container">
               <div class="item">
@@ -222,30 +222,48 @@
     </section>
     <section class="section1 row" id="section-kontakt">
       <h1 class="title">Kontakt</h1>
-      <p class="contactinfo">
-        Adresse: <br>
-
-        Bytoften 2<br>
-        6800 Varde<br>
-        Varde kommune <br><br><br>
-
-
-        Tlf : 79 94 68 00<br><br>
-        Mail : vardekommune@varde.dk
-      </p>
-      <div id="socialmedia">
-        <a href="https://www.linkedin.com/company/varde-kommune/" target="_blank" class="fa fa-linkedin"></a>
-        <a href="https://www.facebook.com/kulturugen/" target="_blank" class="fa fa-facebook"></a>
-        <a href="https://twitter.com/vardekommune?lang=da" target="_blank" class="fa fa-twitter"></a>
+      <div class="container-contactinfo">
+        <div class="contact-sect">
+          <div class="contact-cat">
+            Telefon:
+          </div>
+          <div class="contactinfo">
+            79 94 68 00
+          </div>
+        </div>
+        <div class="contact-sect">
+          <div class="contact-cat">
+            Mail:
+          </div>
+          <div class="contactinfo">
+            varde@vardekommune.dk
+          </div>
+        </div>
+        <div class="contact-sect">
+          <div class="contact-cat">
+            Adresse:
+          </div>
+          <div class="contactinfo">
+            Varde kommune<br />
+            Bytoftes 2<br />
+            6800 Varde
+          </div>
+        </div>
+        <div class="contact-sect">
+        <div id="socialmedia">
+          <a href="https://www.linkedin.com/company/varde-kommune/" target="_blank" class="fa fa-linkedin fa-2x"></a>
+          <a href="https://www.facebook.com/kulturugen/" target="_blank" class="fa fa-facebook fa-2x"></a>
+          <a href="https://twitter.com/vardekommune?lang=da" target="_blank" class="fa fa-twitter fa-2x"></a>
+        </div>
       </div>
-
+      </div>
       <div class="container">
         <script src="assets/js/contact.js"></script>
         <form action="indbakke.html" onsubmit="saveData()">
           <label for="fname">Skriv besked</label>
           <input type="text" class="name" id="name" placeholder="Navn">
           <input type="text" class="mail" id="email" placeholder="Mail">
-          <textarea id="besked" class="message" placeholder="Besked" style="height:200px"></textarea>
+          <textarea id="besked" class="message" placeholder="Besked"></textarea>
           <input type="submit" class="send_button" value="Send" onclick="">
         </form>
       </div>
