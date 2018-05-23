@@ -103,3 +103,24 @@ btnLeftEl.addEventListener("click", function(e) {
 btnRightEl.addEventListener("click", function(e) {
   slideImages("right");
 });
+
+//Slideshow billedgalleri
+var listEl_billedgalleri = document.querySelector('.carousel-billedgalleri');
+var btnLeftEl_billedgalleri = document.querySelector('#left-btn-billedgalleri');
+var btnRightEl_billedgalleri = document.querySelector('#right-btn-billedgalleri');
+var count_billedgalleri = 0;
+
+function slideImages_billedgalleri(dir) {
+  var totalChildren_billedgalleri = listEl_billedgalleri.querySelectorAll(".item-billedgalleri").length;
+  dir === "left" ? ++count_billedgalleri : --count_billedgalleri;
+  listEl_billedgalleri.style.left = count_billedgalleri * 224 + 'px';
+  btnLeftEl_billedgalleri.style.display = count_billedgalleri < 0 ? "block" : "none";
+  btnRightEl_billedgalleri.style.display = count_billedgalleri > 3 - totalChildren_billedgalleri ? "block" :
+    "none";
+}
+btnLeftEl_billedgalleri.addEventListener("click", function(e) {
+  slideImages_billedgalleri("left");
+});
+btnRightEl_billedgalleri.addEventListener("click", function(e) {
+  slideImages_billedgalleri("right");
+});

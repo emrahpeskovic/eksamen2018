@@ -50,9 +50,9 @@ body {
 }
 
 #section-program {
-  position: relative;
+  width: 100%;
+  min-height: 800px;
   display: block;
-  height: 835px;
 }
 
 #container-program {
@@ -61,17 +61,17 @@ body {
 
 #section-program .panel {
   position: absolute;
+  top: 60px;
+  left: 20px;
   background-color: #9D6946;
   width: 920px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   visibility: hidden;
-  top: 60px;
   border-bottom-left-radius: 70px;
   border-bottom-right-radius: 70px;
   opacity: 0;
-  left: 20px;
   padding: 30px;
 }
 
@@ -208,7 +208,10 @@ body {
   border-radius: 30px;
   background: #344e5b;
 }
-
+.col {
+  display: flex;
+  flex-direction: column;
+}
 #login-container {
   width: 400px;
   height: 300px;
@@ -250,11 +253,21 @@ body {
 .section2 {
   width: 100%;
   background-color: #344E5B;
-  margin: auto;
+  display: flex;
   position: relative;
   z-index: 1;
 }
-
+.sect-prog {
+  width: 100%;
+  height: 800px;
+  background-color: #344E5B;
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+#container-center {
+  margin: auto;
+}
 .padding {
   padding: 50px;
   box-sizing: border-box;
@@ -367,8 +380,8 @@ input[type=submit]:hover {
 
 .container {
   border-radius: 15px;
-  padding: 0px 20px 0px 20px;
-  margin: auto;
+  padding: 0px 10px 0px 20px;
+  margin: auto 70px auto auto;
   color: #fff;
   flex: 1;
   font-family: "cambria";
@@ -407,7 +420,7 @@ input[type=submit]:hover {
   text-align: center;
 }
 
-.carousel {
+.carousel, .carousel-billedgalleri {
   transition: -ms-transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s, transform 0.5s ease 0s;
   position: relative;
   white-space: nowrap;
@@ -498,7 +511,6 @@ input[type=submit]:hover {
   display: flex;
   flex-wrap: wrap;
   margin: 0px 20px 0px 70px;
-  padding: 10px;
 }
 
 .contact-sect:last-child {
@@ -661,8 +673,20 @@ footer {
   float: left;
   margin-right: 30px;
 }
+#section-billedgalleri .item-container {
+  display: inline-block;
+  margin-right: 30px;
+}
 
 #section-billedgalleri .carousel-container {
   max-width: 70%;
   margin: auto;
+}
+#section-billedgalleri #right-btn-billedgalleri {
+  position: absolute;
+  right: -80px;
+}
+#section-billedgalleri #left-btn-billedgalleri {
+  position: absolute;
+  left: -80px;
 }
