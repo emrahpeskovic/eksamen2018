@@ -21,21 +21,21 @@ var acc = document.getElementsByClassName("day");
 var panel = document.getElementsByClassName('panel');
 // Denne kører for hver gang der er et element der har classen "day"
 for (var i = 0; i < acc.length; i++) {
-  // Dette er en funktion når man klikker på et element der har classen "day"
-  acc[i].onclick = function() {
-    // Denne variabel tjekker om den du klikker har på classen "active"
-    var setClasses = !this.classList.contains('active');
-    // Her fjerner man classen active og show på "day" og "panel"
-    setClass(acc, 'active', 'remove');
-    setClass(panel, 'show', 'remove');
-    // Denne tjekker om variabelen setClasses er sand
-    if (setClasses) {
-      // Det element du trykker på får classen "active"
-      this.classList.toggle("active");
-      // Dette tager element lige efter classen "day" som er "panel" og tilføjer classen "show"
-      this.nextElementSibling.classList.toggle("show");
+    // Dette er en funktion når man klikker på et element der har classen "day"
+    acc[i].onclick = function () {
+        // Denne variabel tjekker om den du klikker har på classen "active"
+        var setClasses = !this.classList.contains('active');
+        // Her fjerner man classen active og show på "day" og "panel"
+        setClass(acc, 'active', 'remove');
+        setClass(panel, 'show', 'remove');
+        // Denne tjekker om variabelen setClasses er sand
+        if (setClasses) {
+            // Det element du trykker på får classen "active"
+            this.classList.toggle("active");
+            // Dette tager element lige efter classen "day" som er "panel" og tilføjer classen "show"
+            this.nextElementSibling.classList.toggle("show");
+        }
     }
-  }
 }
 
 // Opretter en funktioner som placerer de forskellige classes
