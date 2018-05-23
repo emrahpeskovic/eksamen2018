@@ -19,21 +19,21 @@ var acc = document.getElementsByClassName("day");
 var panel = document.getElementsByClassName('panel');
 // Denne kører for hver gang der er et element der har classen "day"
 for (var i = 0; i < acc.length; i++) {
-    // Dette er en funktion når man klikker på et element der har classen "day"
-    acc[i].onclick = function () {
-        // Denne variabel tjekker om den du klikker har på classen "active"
-        var setClasses = !this.classList.contains('active');
-        // Her fjerner man classen active og show på "day" og "panel"
-        setClass(acc, 'active', 'remove');
-        setClass(panel, 'show', 'remove');
-        // Denne tjekker om variabelen setClasses er sand
-        if (setClasses) {
-            // Det element du trykker på får classen "active"
-            this.classList.toggle("active");
-            // Dette tager element lige efter classen "day" som er "panel" og tilføjer classen "show"
-            this.nextElementSibling.classList.toggle("show");
-        }
+  // Dette er en funktion når man klikker på et element der har classen "day"
+  acc[i].onclick = function() {
+    // Denne variabel tjekker om den du klikker har på classen "active"
+    var setClasses = !this.classList.contains('active');
+    // Her fjerner man classen active og show på "day" og "panel"
+    setClass(acc, 'active', 'remove');
+    setClass(panel, 'show', 'remove');
+    // Denne tjekker om variabelen setClasses er sand
+    if (setClasses) {
+      // Det element du trykker på får classen "active"
+      this.classList.toggle("active");
+      // Dette tager element lige efter classen "day" som er "panel" og tilføjer classen "show"
+      this.nextElementSibling.classList.toggle("show");
     }
+  }
 }
 // Opretter en funktion som placerer de forskellige classes
 function setClass(els, className, fnName) {
@@ -46,22 +46,22 @@ function setClass(els, className, fnName) {
 var acc1 = document.getElementsByClassName("day_insti");
 var panel1 = document.getElementsByClassName('panel_insti');
 for (var c = 0; c < acc1.length; c++) {
-    acc1[c].onclick = function () {
-        var setClasses1 = !this.classList.contains('active');
-        setClass1(acc1, 'active', 'remove');
-        setClass1(panel1, 'show', 'remove');
-        if (setClasses1) {
-            this.classList.toggle("active");
-            this.nextElementSibling.classList.toggle("show");
-        }
+  acc1[c].onclick = function() {
+    var setClasses1 = !this.classList.contains('active');
+    setClass1(acc1, 'active', 'remove');
+    setClass1(panel1, 'show', 'remove');
+    if (setClasses1) {
+      this.classList.toggle("active");
+      this.nextElementSibling.classList.toggle("show");
     }
+  }
 }
 // Opretter en funktioner som placerer de forskellige classes
 function setClass1(els1, className1, fnName1) {
-    // Denne kører hver gang den skal tilføje en class så 2 gange i disse tilfælde
-    for (var c = 0; c < els1.length; c++) {
-        els1[c].classList[fnName1](className1);
-    }
+  // Denne kører hver gang den skal tilføje en class så 2 gange i disse tilfælde
+  for (var c = 0; c < els1.length; c++) {
+    els1[c].classList[fnName1](className1);
+  }
 }
 /* Javascript til datoen */
 // Opretter en variabel hvor jeg gemmer dato for festivalen
@@ -85,20 +85,21 @@ var x = setInterval(function() {
     minutes + " minutter " + seconds + "sekunder </p>";
 }, 1000);
 var listEl = document.querySelector('.carousel');
- var btnLeftEl = document.querySelector('#left-btn');
- var btnRightEl = document.querySelector('#right-btn');
- var count = 0;
- function slideImages(dir){
-   var totalChildren = listEl.querySelectorAll(".item").length;
-   dir === "left" ? ++count : --count;
-   listEl.style.left = count * 286 + 'px';
-   btnLeftEl.style.display = count < 0 ? "block" : "none";
-   btnRightEl.style.display = count > 4-totalChildren ? "block" :
-"none";
- }
- btnLeftEl.addEventListener("click", function(e) {
-     slideImages("left");
- });
- btnRightEl.addEventListener("click", function(e) {
-     slideImages("right");
- });
+var btnLeftEl = document.querySelector('#left-btn');
+var btnRightEl = document.querySelector('#right-btn');
+var count = 0;
+
+function slideImages(dir) {
+  var totalChildren = listEl.querySelectorAll(".item").length;
+  dir === "left" ? ++count : --count;
+  listEl.style.left = count * 286 + 'px';
+  btnLeftEl.style.display = count < 0 ? "block" : "none";
+  btnRightEl.style.display = count > 4 - totalChildren ? "block" :
+    "none";
+}
+btnLeftEl.addEventListener("click", function(e) {
+  slideImages("left");
+});
+btnRightEl.addEventListener("click", function(e) {
+  slideImages("right");
+});
