@@ -148,12 +148,16 @@ body {
 }
 
 .section1 .left {
-  width: 20%;
-  float: left;
+  flex: 1;
 }
 
 .section1 .right {
-  width: 40%;
+  flex: 1.5;
+}
+
+.sect_container {
+  max-width: 900px;
+  display: flex;
 }
 
 .section1 .right p {
@@ -234,9 +238,7 @@ body {
 .section1 {
   width: 100%;
   background-color: #9d6946;
-  margin: auto;
-  padding: 10px;
-  box-sizing: border-box;
+  display: flex;
 }
 
 .section2 {
@@ -467,8 +469,8 @@ input[type=submit]:hover {
   display: none;
 }
 
-#app_ikon {
-  width: 350px;
+.img-resize {
+  width: 250px;
 }
 
 #dinbesked, #emailbesked {
