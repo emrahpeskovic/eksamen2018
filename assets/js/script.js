@@ -12,9 +12,7 @@ function initMap() {
     map: map
   });
 }
-
 /* Program Javascript */
-
 // Smider alle med classen "day" ind i en variabel
 var acc = document.getElementsByClassName("day");
 // Smider alle med classen "panel" ind i en variabel
@@ -37,17 +35,35 @@ for (var i = 0; i < acc.length; i++) {
         }
     }
 }
-
-// Opretter en funktioner som placerer de forskellige classes
+// Opretter en funktion som placerer de forskellige classes
 function setClass(els, className, fnName) {
   // Denne kører hver gang den skal tilføje en class så 2 gange i disse tilfælde
   for (var i = 0; i < els.length; i++) {
     els[i].classList[fnName](className);
   }
 }
-
+/* Instituion Javascript */
+var acc1 = document.getElementsByClassName("day_insti");
+var panel1 = document.getElementsByClassName('panel_insti');
+for (var c = 0; c < acc1.length; c++) {
+    acc1[c].onclick = function () {
+        var setClasses1 = !this.classList.contains('active');
+        setClass1(acc1, 'active', 'remove');
+        setClass1(panel1, 'show', 'remove');
+        if (setClasses1) {
+            this.classList.toggle("active");
+            this.nextElementSibling.classList.toggle("show");
+        }
+    }
+}
+// Opretter en funktioner som placerer de forskellige classes
+function setClass1(els1, className1, fnName1) {
+    // Denne kører hver gang den skal tilføje en class så 2 gange i disse tilfælde
+    for (var c = 0; c < els1.length; c++) {
+        els1[c].classList[fnName1](className1);
+    }
+}
 /* Javascript til datoen */
-
 // Opretter en variabel hvor jeg gemmer dato for festivalen
 var countDownDate = new Date("August 31, 2019").getTime();
 // Denne variabel kører funktionen hvert sekund for at tjekke om der er sket ændringer
@@ -70,7 +86,6 @@ var listEl = document.querySelector('.carousel');
  var btnLeftEl = document.querySelector('#left-btn');
  var btnRightEl = document.querySelector('#right-btn');
  var count = 0;
-
  function slideImages(dir){
    var totalChildren = listEl.querySelectorAll(".item").length;
    dir === "left" ? ++count : --count;
@@ -79,7 +94,6 @@ var listEl = document.querySelector('.carousel');
    btnRightEl.style.display = count > 4-totalChildren ? "block" :
 "none";
  }
-
  btnLeftEl.addEventListener("click", function(e) {
      slideImages("left");
  });
