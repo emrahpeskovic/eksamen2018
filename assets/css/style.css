@@ -3,11 +3,6 @@
   src: url("../fonts/augusta.ttf")
 }
 
-@font-face {
-  font-family: "cambria";
-  src: url("../fonts/cambria.ttf")
-}
-
 body {
   background-color: #747D79;
   margin: 0;
@@ -231,11 +226,11 @@ body {
 }
 
 #adminlogin-title {
-  font-family: "cambria";
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: white;
 }
 #welcome {
-  font-family: "cambria";
+  font-family: helvetica;
   font-size: 60px;
   color: white;
   margin: 0px 0px 20px 0px;
@@ -283,7 +278,7 @@ body {
 
 .description {
   flex: 1;
-  font-family: "cambria";
+  font-family: helvetica;
   font-size: 18px;
   color: white;
   line-height: 30px;
@@ -384,20 +379,20 @@ input[type=submit]:hover {
   margin: auto 70px auto auto;
   color: #fff;
   flex: 1;
-  font-family: "cambria";
+  font-family: helvetica;
   font-size: 25px;
   height: 470px;
 }
 
 .name, .mail {
   font-size: 15px;
-  font-family: "cambria";
+  font-family: helvetica;
 }
 
 .message {
   height: 220px;
   font-size: 15px;
-  font-family: 'cambria';
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .submit {}
@@ -446,7 +441,7 @@ input[type=submit]:hover {
   white-space: pre-wrap;
   color: white;
   max-width: 50%;
-  font-size: 19px;
+  font-size: 20px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: auto;
   font-size: 20px;
@@ -496,7 +491,7 @@ input[type=submit]:hover {
 
 #dinbesked, #emailbesked {
   color: white;
-  font-family: "cambria";
+  font-family: helvetica;
   font-size: 20px;
 }
 
@@ -707,7 +702,7 @@ footer {
 }
 
 .fname {
-    font-family: 'cambria';
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: white;
     font-size: 25px;
     flex: 1;
