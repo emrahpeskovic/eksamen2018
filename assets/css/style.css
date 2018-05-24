@@ -396,6 +396,8 @@ input[type=submit]:hover {
 
 .message {
   height: 220px;
+  font-size: 15px;
+  font-family: 'cambria';
 }
 
 .submit {}
@@ -702,4 +704,11 @@ footer {
 #section-billedgalleri #left-btn-billedgalleri {
   position: absolute;
   left: -80px;
+}
+
+.fname {
+    font-family: 'cambria';
+    color: white;
+    font-size: 25px;
+    flex: 1;
 }
